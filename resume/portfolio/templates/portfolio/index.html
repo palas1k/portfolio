@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <title>Title</title>
+</head>
+<body>
+<header id="home">
+    <a href="{% url 'home' %}">Домой</a>
+    <a href="#about">Обо Мне</a>
+    <a href="#stack">Стек</a>
+    <a href="#exp">Мои работы</a>
+    <a href="#contacts">Контакты</a>
+</header>
+<hr align="center" width="70%" size="1" color="#000000"/>
+<div class="container" id="about">
+    <div class="textblock">
+        Nail<br> Fatkhutdinov
+    </div>
+    <div class="textblock1">
+        Python Backend Developer <br> 28 years old, Kazan
+    </div>
+    <div class="photoblock">
+        <img class="img" src="/static/profilephoto.png">
+    </div>
+</div>
+<div class="container">
+    <br><br><h1>Обо мне</h1>
+    <p class="ptext">Привет я Наиль - Django макака из Казани. <br>
+    Мне интересно программирование и деньги связанные с этим.
+    </p><br>
+    <p class="ptext">Я нигде не учился сам все сам <br>
+    </p> <br>
+    <p class="ptext">
+        Готов поддерживать существующий проект или поучаствовать в создании нового. <br>
+        Учиться новому и не забывать старое.
+    </p>
+</div>
+<div class="container" id="stack">
+    <h1>Стек</h1>
+    <p class="ptext" style="font-weight: bold;">
+        Python <br><br>
+        Django <br><br>
+        DRF <br><br>
+        Git <br><br>
+        PostgreSQL <br><br>
+    </p>
+</div>
+<div class="container" id="exp">
+    <h1>Мои работы</h1>
+</div>
+<div class="container" id="contacts">
+    <h1>Контакты</h1>
+    <p class="ptext" style="font-size: 25px;">
+        Если хочешь предложить работу <br>
+        или позвать попить пива <br><br>
+        Можешь написать сюда
+    </p>
+    <div class="contact-block">
+        <a href="https://t.me/nfathutdinov"><img class="contactimage" src="/static/tgicon.png" width="50" height="50" ></a>
+        <a href="https://kazan.hh.ru/resume/a44182e8ff0b6cd3460039ed1f68734f30704c"><img class="contactimage"  src="/static/hhmin.svg" width="48" height="48" ></a>
+        <a href="https://github.com/palas1k"><img class="contactimage" src="/static/github-mark.png" width="49" height="49" ></a>
+    </div>
+</div>
+</body>
+</html>
